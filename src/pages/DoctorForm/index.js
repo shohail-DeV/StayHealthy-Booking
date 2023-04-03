@@ -158,6 +158,12 @@ function DoctorForm() {
                 <Form.Item
                   label="Website"
                   name="website"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Required",
+                    },
+                  ]}
                 >
                   <input type="text" />
                 </Form.Item>
